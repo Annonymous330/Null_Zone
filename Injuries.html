@@ -53,16 +53,16 @@
             <p>&copy; Recuerda, siempre estoy observando... incluso cuando crees que no lo estoy.</p>
         </footer>
     </div>
-
     <script>
-        document.getElementById('playAudio').addEventListener('click', function () {
-            const audio = document.getElementById('backgroundMusic');
-            audio.play(); 
-            this.style.opacity = '0'; 
-            setTimeout(() => {
-                this.style.display = 'none'; 
-            }, 300); 
-        });
-    </script>
+    document.getElementById('playAudio').addEventListener('click', function () {
+        const audio = document.getElementById('backgroundMusic');
+        audio.volume = 0.3; // Ajusta el volumen aquí (20%)
+        audio.play();
+        this.style.opacity = '0';
+        setTimeout(() => {
+            this.style.display = 'none';
+        }, 300);
+    });
+  </script> 
 </body>
 </html>
